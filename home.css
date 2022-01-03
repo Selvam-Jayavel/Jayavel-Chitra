@@ -1,0 +1,253 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+nav1 {
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  right: 0;
+  top: 0;
+  font-family: sans-serif;
+  height: 60px;
+  background-color: skyblue;
+}
+.social-menu ul {
+  position: absolute;
+  top: 18%;
+  left: 80%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+.social-menu ul li {
+  list-style: none;
+  margin: 0 15px;
+}
+.social-menu ul li .fa:hover {
+  color: #fff;
+}
+.social-menu ul li .fa {
+  font-size: 20px;
+  line-height: 40px;
+  transition: 0.6s;
+  color: black;
+}
+
+.social-menu ul li a {
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: white;
+  text-align: center;
+  transition: 0.6s;
+  box-shadow: 0 5px 4px (rgba(0, 0, 0, 5));
+}
+
+.social-menu ul li a:hover {
+  transform: translate(0, -10px);
+}
+.social-menu ul li:nth-child(1) a:hover {
+  background-color: blue;
+}
+.social-menu ul li:nth-child(2) a:hover {
+  background-color: blue;
+}
+.social-menu ul li:nth-child(3) a:hover {
+  background-color: red;
+}
+nav {
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  right: 0;
+  top: 60px;
+  font-family: sans-serif;
+  height: 70px;
+  background-color: white;
+}
+nav .links {
+  float: right;
+  padding: 0;
+  margin: 0;
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav .links li {
+  list-style: none;
+}
+nav .links a {
+  display: block;
+  padding: 1cm;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+.slider1,
+.slider2,
+.slider3,
+.slider4 {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+img {
+  width: 120%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation: zoom-out 3s linear infinite;
+}
+@keyframes zoom-out {
+  100% {
+    width: 100%;
+  }
+}
+.text-box {
+  width: 600px;
+  position: absolute;
+  top: 200px;
+  left: 100px;
+  color: red;
+  animation: textup 12s linear infinite;
+  transform: translateY(100px);
+}
+
+.text-box h1 {
+  margin-bottom: 40px;
+}
+.text-box p {
+  font-size: 20px;
+  line-height: 18px;
+  margin-top: 10px;
+}
+.slider1 {
+  animation: slider1 12s linear infinite;
+}
+.slider2 {
+  animation: slider2 12s linear infinite;
+}
+.slider3 {
+  animation: slider3 12s linear infinite;
+}
+.slider4 {
+  animation: slider4 12s linear infinite;
+}
+
+@keyframes slider1 {
+  0% {
+    visibility: visible;
+  }
+
+  25% {
+    visibility: hidden;
+  }
+
+  50% {
+    visibility: hidden;
+  }
+
+  75% {
+    visibility: hidden;
+  }
+
+  100% {
+    visibility: hidden;
+  }
+}
+
+@keyframes slider2 {
+  0% {
+    visibility: hidden;
+  }
+
+  25% {
+    visibility: hidden;
+  }
+
+  50% {
+    visibility: visible;
+  }
+
+  75% {
+    visibility: hidden;
+  }
+
+  100% {
+    visibility: hidden;
+  }
+}
+@keyframes slider3 {
+  0% {
+    visibility: hidden;
+  }
+
+  25% {
+    visibility: hidden;
+  }
+
+  50% {
+    visibility: hidden;
+  }
+
+  75% {
+    visibility: visible;
+  }
+
+  100% {
+    visibility: hidden;
+  }
+}
+@keyframes slider4 {
+  0% {
+    visibility: hidden;
+  }
+
+  25% {
+    visibility: hidden;
+  }
+
+  50% {
+    visibility: hidden;
+  }
+
+  75% {
+    visibility: hidden;
+  }
+
+  100% {
+    visibility: visible;
+  }
+}
+
+@keyframes textup {
+  10% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.text-box1 {
+  animation-delay: 0s;
+}
+.text-box2 {
+  animation-delay: 3s;
+}
+.text-box3 {
+  animation-delay: 6s;
+}
+.text-box4 {
+  animation-delay: 9s;
+}
